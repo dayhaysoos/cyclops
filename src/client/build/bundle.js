@@ -62,15 +62,15 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _Home = __webpack_require__(246);
+	var _Home = __webpack_require__(247);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _About = __webpack_require__(248);
+	var _About = __webpack_require__(249);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _main = __webpack_require__(249);
+	var _main = __webpack_require__(250);
 
 	var _main2 = _interopRequireDefault(_main);
 
@@ -79,9 +79,12 @@
 	var router = _react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
-	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _App2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: 'home', components: _Home2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default })
+	  _react2.default.createElement(
+	    _reactRouter.Route,
+	    { path: '/', component: _App2.default },
+	    _react2.default.createElement(_reactRouter.Route, { path: 'home', components: _Home2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default })
+	  )
 	);
 
 	//import CSS
@@ -28255,7 +28258,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Footer = __webpack_require__(245);
+	var _Navigation = __webpack_require__(245);
+
+	var _Navigation2 = _interopRequireDefault(_Navigation);
+
+	var _Footer = __webpack_require__(246);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -28282,7 +28289,7 @@
 				return _react2.default.createElement(
 					'div',
 					{ className: 'main-container' },
-					_react2.default.createElement(Navigation, null),
+					_react2.default.createElement(_Navigation2.default, null),
 					this.props.children,
 					_react2.default.createElement(_Footer2.default, null)
 				);
@@ -28296,6 +28303,69 @@
 
 /***/ },
 /* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Navigation = function (_React$Component) {
+		_inherits(Navigation, _React$Component);
+
+		function Navigation() {
+			_classCallCheck(this, Navigation);
+
+			return _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).apply(this, arguments));
+		}
+
+		_createClass(Navigation, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"nav",
+					{ "class": "nav" },
+					_react2.default.createElement(
+						"a",
+						{ "class": "nav-item", href: "#" },
+						"Contact"
+					),
+					_react2.default.createElement(
+						"a",
+						{ "class": "nav-item", href: "#" },
+						"Login"
+					),
+					_react2.default.createElement(
+						"a",
+						{ "class": "nav-item", href: "#" },
+						"Sign up"
+					)
+				);
+			}
+		}]);
+
+		return Navigation;
+	}(_react2.default.Component);
+
+	exports.default = Navigation;
+
+/***/ },
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28344,7 +28414,7 @@
 	exports.default = Footer;
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28361,11 +28431,11 @@
 
 	var _reactRouter = __webpack_require__(172);
 
-	var _Header = __webpack_require__(247);
+	var _Header = __webpack_require__(248);
 
 	var _Header2 = _interopRequireDefault(_Header);
 
-	var _Footer = __webpack_require__(245);
+	var _Footer = __webpack_require__(246);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -28409,7 +28479,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -28458,7 +28528,7 @@
 	exports.default = Header;
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28518,16 +28588,16 @@
 	exports.default = About;
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(250);
+	var content = __webpack_require__(251);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(252)(content, {});
+	var update = __webpack_require__(253)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -28544,10 +28614,10 @@
 	}
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(251)();
+	exports = module.exports = __webpack_require__(252)();
 	// imports
 
 
@@ -28558,7 +28628,7 @@
 
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports) {
 
 	/*
@@ -28614,7 +28684,7 @@
 
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
