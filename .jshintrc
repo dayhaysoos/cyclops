@@ -2,7 +2,7 @@
   "browser": true,
   "camelcase": false,
   "esnext": true,
-  "indent": 2,
+  "indent": false,
   "latedef": false,
   "newcap": true,
   "quotmark": "single"
