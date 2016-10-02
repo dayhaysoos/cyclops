@@ -1,7 +1,7 @@
 {
-  "name": "terrible-react-boilerplate",
+  "name": "Cyclops",
   "version": "1.0.0",
-  "description": "React Boiler Plate",
+  "description": "The Best Video Conferencing Web App",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
