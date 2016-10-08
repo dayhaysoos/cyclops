@@ -1,3 +1,4 @@
+@import '../foundation/foundation.min.css';
 @import '../../app/components/Header/Header';
 @import '../../app/components/Footer/Footer';
 @import '../../app/components/Home/Home';
@@ -6,3 +7,6 @@
 @import '../../app/components/TermsOfService/TermsOfService';
 @import '../../app/components/Feedback/Feedback';
 
+.row {
+	margin: 0;
+}
